@@ -1,0 +1,3 @@
+O position relative, ele libera a opção de você botar outros atributos como top, left, right, bottom.
+
+E o position absolute, ele permite que você movimente o seu elemento de acordo com outro que veio antes, ou que é o pai, que esteja a position diferente de static que é a padrão

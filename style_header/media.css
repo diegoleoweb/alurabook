@@ -1,0 +1,238 @@
+/* ate a largura 1024px dps ela passa a utilizar outra media screen*/
+
+/*Header*/
+@media screen and ( min-width: 1024px) {
+    .container__titulo, .container__titulo--negrito{
+        font-family: var(--font-secundario);
+        font-size: 30px;
+    }
+    .container__titulo{
+        font-weight: 400;
+        display: block  ;
+    }
+    .container__titulo--negrito{
+        font-weight: 700;
+    }
+    
+    .opções{
+        display: flex;
+    }
+    .opções__itens{
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+    .opções__link{
+        text-decoration: none;
+        color: var(--preto);
+    }
+    .container__imagen--transparente{
+        display: none;
+    }
+    .cabecalho_menu-hamburgue{
+        display: none;
+    }
+
+    .opções__botões:checked ~ .lista__menu{
+        display: block;
+        width: auto;
+    }
+    .opções__botões{
+        display: none;
+    }
+    .opções__botões:checked~.opções__rotulo>.opções__itens{
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+    .opções__itens{
+        padding: 2em 1em;
+    }
+}
+
+/*Banner*/
+@media screen and (min-width: 1024px) {
+    .banner__titulo{
+        font-size: 36px;
+     }
+     .banner__pesquisa{
+        width: 50%;
+     }
+     .banner__pesquisa::placeholder{
+        background-position: 7em;
+     }
+}
+
+/*Carrocel*/
+@media screen and (min-width:1024px) {
+    .carrossel__titulo{
+        font-size: 26px;
+        padding: 2em 0 1em 0;
+    }
+    .swiper-pagination{
+        margin: 2em 0 3em 0;
+    }
+    .swiper{
+        width: 60%;
+    }
+    .swiper-button-prev, 
+    .swiper-button-next{
+        display: block;
+        top: 60%;
+    }
+    .card{
+        width: 40%;
+        margin: 1em auto;
+    }
+}
+
+/*Topicos*/
+@media screen and ( min-width:1024px) {
+    .topicos__titulo{
+        font-size: 24px;
+    }
+    .topicos__links{
+        font-size: 24px;
+    } 
+}
+
+/*Contatos*/
+@media screen and (min-width: 1024px){
+    .contato{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contato__titulo{
+        font-size: 24px;
+    }
+    .contato__descrição{
+        margin-right: 1em;
+        width: 30%;
+    }
+    .contato__email{
+        width: 30%;
+    }
+}
+
+/*Footer*/
+@media screen and (min-width: 1024px) {
+    .rodapé{
+        display: flex;
+        justify-content: space-around;
+        background: var(--branco);
+    }
+    .rodape__titulo{
+        font-size: 24px;
+    }
+    .lista-rodapé{
+        display: block;
+    }
+    .rodapé__lista__titulo{
+        padding: 1em;
+        color: var(--cinza-claro);
+        font-size: 14px;
+    }
+    .rodapé__lista__item{
+        display: flex;
+        align-items: center;
+        padding: 1em;
+    }
+    .lista__rodapé__link{
+        color: var(--cinza);
+        text-decoration: none;
+        margin-left: 0.6em;
+    }
+}
+
+/*Largura  1724px*/
+
+/*header 1724px*/
+@media screen and (min-width: 1724px) {
+    .cabecalho{
+        padding: 0 2em;
+    }
+    .container__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+    .opções{
+        margin-right: auto;
+    }
+    .container__texto{
+        display: block;
+    }
+    .lista-menu__item:hover {
+        background: var(--azul-degrade);
+    }
+    .lista-menu__item:hover > .lista-menu__link{
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
+    }
+}
+
+/*Banner 1724px*/
+@media screen and (min-width: 1724px) {
+    .banner{
+        padding: 5em;
+    }
+    .banner__pesquisa{
+        width: 35%;
+    }
+    .banner__pesquisa::placeholder{
+        background-position: 10em;
+    }
+}
+
+/*Carrocel 1724px*/
+@media screen and (min-width: 1724px) {
+    .carrossel__container{
+        display: flex;
+        margin: 0 20vw 3em 20vw;
+        align-items: center;
+    }
+    .swiper-pagination{
+        position: initial;
+        margin: 1em 0;
+    }
+    .swiper{
+        width: 50%;
+    }
+    .descricao__titulo{
+        font-size: 32px;
+    }
+    .descricao__texto{
+        font-size: 16px;
+    }
+    .card{
+        width: 60%;
+        margin-left: 3em;
+    }
+    .descricao{
+        margin-right: 1em;
+    }
+}
+
+/*Topcios 1724px*/
+@media screen and (min-width: 1724px) {
+    .topicos{
+        padding: 3em 28vw;
+    }
+}
+
+/*Contatos 1724px*/
+@media screen and (min-width: 1724px) {
+    .contato{
+        padding: 3em 20vw;
+    }
+}
+
+/*Rodapé 1724px*/
+@media screen and (min-width: 1724px) {
+    .lista-rodapé{
+        border-left: 1px solid var(--cinza);
+    }
+    .rodapé{
+        padding: 3em 0 ;
+    }
+}

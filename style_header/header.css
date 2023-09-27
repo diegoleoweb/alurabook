@@ -1,0 +1,74 @@
+/*Criando o meu interativo sem js*/
+.cabecalho_menu-hamburgue{
+    width: 24px;
+    height: 24px;
+    background-image: url("../Assets/Menu.svg");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.container__botao:checked ~ .container__rotulo > .cabecalho_menu-hamburgue{
+    background-image: url(../Assets/Menu\ Aberto.svg);
+}
+.container__botao:checked ~ .container__rotulo{
+    background: var(--azul-degrade);
+}
+.cabecalho{
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.container_imagen{
+    padding: 1em;
+}
+
+.lista__menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+/* (checkd pseudo classe ~) procura uma classe e coloca uma interação */
+.container__botao:checked ~ .lista__menu{
+    display: block;
+}
+/*usando , para estilisar 2  classes ao mesmo tempo*/
+.lista-menu__titulo, .lista-menu__item{
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo{
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+/*mudou a cor da fonte nos texto e webkit compaibilidade com navegadores*/
+.lista-menu__link{
+    background: var(--azul-degrade);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     background-clip: text;
+}
+
+.container__botao{
+    display: none;
+}
+.container__titulo{
+    display: none;
+}
+.opções{
+    display: none;
+}
+.container__texto{
+    display: none ;
+}
